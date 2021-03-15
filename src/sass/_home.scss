@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    height: 30rem;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+
+  &__link {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: $shadow-medium;
+  }
+
+  &__img-cropped {
+    width: 30rem;
+  }
+}
