@@ -13,29 +13,48 @@
 
   <body class="container">
     <header class="header">
-        <div class="scroll_progress"></div>
+        <div class="scroll-progress"></div>
         <nav class="nav">
           <div class="personal">
             <span class="personal__logo">KA</span>
             <div class="personal__divider"></div>
             <a href="https://github.com/kate-atherton" target= "_blank" class="personal__link">
-              <img src="img/github.svg" alt="github logo">
+              <div class="personal__front">
+                <img src="img/github.svg" alt="github logo">
+              </div>
+              <div class="personal__back">
+                <img src="img/new-tab.svg" alt="new tab icon">
+              </div>
             </a>
             <a href="" target= "_blank" class="personal__link">
-              <img src="img/linkedin.svg" alt="linkedin logo">
+              <div class="personal__front">
+                <img src="img/linkedin.svg" alt="linkedin logo">
+              </div>
+              <div class="personal__back">
+                <img src="img/new-tab.svg" alt="new tab icon">
+              </div>
             </a>
           </div>
 
           <ul class="navbar">
-            <li class="navbar__link">Home</li>
-            <li class="navbar__link">About</li>
-            <li class="navbar__link">Work</li>
-            <li class="navbar__link">Contact</li>
+            <li class="navbar__stroke">
+              <a href="#home" id="home-link" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__stroke">
+              <a href="#about" id="about-link" class="navbar__link">About</a>
+            </li>
+            <li class="navbar__stroke">
+              <a href="#work" id="work-link" class="navbar__link">Work</a>
+            </li>
+            <li class="navbar__stroke">
+              <a href="#contact" id="contact-link"class="navbar__link">Contact</a>
+            </li>
+            
           </ul> 
         </nav>       
     </header> 
     <main class="main">  
-      <section class="home">
+      <section id="home" class="home section">
         <div class="home__intro">
           <h1 class="heading">Hi I'm Kate</h1>
           <p class="home__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatem fugit tempore eligendi. Corrupti incidunt magni non exercitationem, optio, possimus</p>
@@ -43,24 +62,101 @@
         </div>           
         <img src="img/photo3Black.jpg" alt="" class="home__img"> 
       </section>  
-      <section class="about">
-        <h1 class="heading">About</h1>
-        <p>Add info about self</p>
-        <!-- skills section -->
+      <section id="about" class="about section">
+        <h1 class="heading ">About</h1>
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ab ad, odio corrupti laudantium eaque nisi unde, quam quibusdam quae cupiditate impedit numquam iure labore aperiam accusamus adipisci expedita!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ab ad, odio corrupti laudantium eaque nisi unde, quam quibusdam quae cupiditate impedit numquam iure labore aperiam accusamus adipisci expedita!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ab ad, odio corrupti laudantium eaque nisi unde, quam quibusdam quae cupiditate impedit numquam iure labore aperiam accusamus adipisci expedita!</p>
+        <div class="about_skills">
+          <div class="about__skill">
+            <span class="about__wrapper">
+              <img src="img/html5.svg" alt="HTML logo" class="about__icon">
+            </span>
+            <h3 class="about__title">HTML 5</h3>
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
+          </div>
+
+          <div class="about__skill">
+            <span class="about__wrapper">
+              <img src="img/css3.svg" alt="CSS logo" class="about__icon">
+            </span>
+            <h3 class="about__title">CSS 3</h3>
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
+          </div>
+          
+          <div class="about__skill">
+            <span class="about__wrapper">
+              <img src="img/javascript.svg" alt="JavaScript logo" class="about__icon">
+            </span>   
+            <h3 class="about__title">JavaScript</h3>
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
+          </div>
+
+          <div class="about__skill">
+            <span class="about__wrapper">
+              <img src="img/sass.svg" alt="Sass logo" class="about__icon">
+            </span> 
+            <h3 class="about__title">Sass</h3>
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
+          </div>
+
+          <div class="about__skill">
+            <span class="about__wrapper">
+              <img src="img/python.svg" alt="Python logo" class="about__icon">
+            </span>
+            <h3 class="about__title">Python</h3>
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur</p>
+          </div>
+
+          <div class="about__skill">
+            <span class="about__wrapper">
+              <img src="img/git.svg" alt="Git logo" class="about__icon">
+            </span>
+            <h3 class="about__title">Git</h3>
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
+          </div> 
+
+        </div>
 
       </section>  
-      <section id="work" class="work">
+      <section id="work" class="work section">
         <h1 class="heading">Work</h1>
-
-        <!-- projects section -->
+        <div class="work__projects">
+          <div class="work__project"></div>
+          <div class="work__project"></div>
+        </div>
+         
       </section>    
-      <section class="contact">
+      <section id="contact" class="contact section">
         <h1 class="heading">Contact</h1>
+        <div class="contact__info">
+          <ul class="contact__links">
+            <li class="contact__wrapper">
+              <div class="contact__logo-wrapper">
+                <img class="contact__logo" src="img/envelop.svg" alt="linkedin logo">
+              </div> 
+              <a class="contact__link" href="mailto: kateatherton222@gmail.com">Send email</a>
+            </li>
+            <li class="contact__wrapper">
+              <div class="contact__logo-wrapper">
+                <img class="contact__logo" src="img/linkedin.svg" alt="linkedin logo">
+              </div>
+              <a class="contact__link" href="mailto: kateatherton222@gmail.com">Kate Atherton</a>
+            </li>
+          </ul>
+  
+            <div class="contact__map" style="background-image: url(img/stratfordMap.jpg);">
+              <div class="contact__square">
+                Kate Atherton
+                Stratford, London
+                @kateatherton222@gmail.com
+              </div>
+            </div>
+        </div>
+        </form>
       </section>     
       
     </main>
     <footer class="footer">
-
+      <p>Placeholder</p>
     </footer>
   </body>
 </html>

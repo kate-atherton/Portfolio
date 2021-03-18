@@ -1,0 +1,105 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 60rem;
+  margin: 10rem auto;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__links {
+    display: flex;
+    height: 13rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    display: flex;
+    box-shadow: $shadow-medium;
+
+    &:hover > .contact__link {
+      background-position: left bottom;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  &__logo-wrapper {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    background-color: $color-primary;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+
+    background: linear-gradient(to right, $color-primary 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.3s ease-out;
+  }
+
+  &__map {
+    position: relative;
+    height: 50rem;
+    width: 100rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__square {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 10rem;
+    background-color: rgb(1, 1, 1, 0.9);
+    color: white;
+    font-size: 1rem;
+
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+    width: 20rem;
+    position: relative;
+
+    &:before {
+      border-top: 7rem solid rgb(1, 1, 1, 0.9);
+      border-left: 10rem solid transparent;
+      border-right: 10rem solid transparent;
+      content: "";
+      height: 0;
+      left: 0;
+      position: absolute;
+      bottom: -7rem;
+      width: 0;
+      position: absolute;
+    }
+  }
+}

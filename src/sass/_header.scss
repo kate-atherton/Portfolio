@@ -1,6 +1,21 @@
 .header {
   width: 100%;
   height: 10vh;
+  background-color: inherit;
+  transition: all 300ms ease-in;
+}
+
+.sticky {
+  position: fixed;
+  height: 8vh;
+  top: 0;
+  box-shadow: $shadow-medium;
+}
+
+.scroll-progress {
+  width: 0%;
+  height: 2px;
+  background-color: $color-primary;
 }
 
 .nav {
@@ -14,6 +29,7 @@
 .personal {
   display: flex;
   align-items: center;
+  height: 4rem;
 
   //need to add a padding variable later
   &__logo {
@@ -21,29 +37,85 @@
     font-weight: 700;
     font-size: 3rem;
     padding: 0 1rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
   }
 
   &__divider {
     display: block;
     width: 1.5px;
-    height: 3.5rem;
+    height: inherit;
     background-color: $color-grey-dark-2;
     margin: 0 1rem;
   }
 
   &__link {
     padding: 0 1rem;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    width: 5.5rem;
+    height: inherit;
+    position: relative;
+    perspective: 1000px;
+
+    &:hover {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &__back,
+  &__front {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  &__back {
+    transform: rotateY(180deg);
   }
 }
 
 .navbar {
   display: flex;
+  position: relative;
 
   &__link {
     text-transform: uppercase;
     color: $color-grey-dark-1;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 0 1rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 0.5rem;
+
+    &--active {
+      color: $color-primary;
+    }
+
+    &:after {
+      position: absolute;
+      margin: auto;
+      width: 0%;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      background-color: currentColor;
+      height: 2px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
   }
 }
