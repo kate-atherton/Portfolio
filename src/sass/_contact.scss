@@ -5,10 +5,44 @@
   width: 80%;
   height: 60rem;
   margin: 10rem auto;
+  position: relative;
+
+  &__map {
+    background-image: url(../../static/img/stratfordMap.jpg);
+    -webkit-mask-image: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.9) 30%,
+      rgba(0, 0, 0, 0.7) 40%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    width: 80%;
+    height: 100%;
+    align-self: flex-end;
+    background-size: contain;
+  }
 
   &__info {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+  }
+
+  &__message {
+    z-index: 100;
+    font-size: 2.75rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    color: $color-primary;
+    text-decoration: none;
+    box-shadow: inset 0px -9px 10px -10px #7353ff;
+    width: fit-content;
+    padding: 0 0.5rem;
   }
 
   &__links {
@@ -16,11 +50,15 @@
     height: 13rem;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: 2rem;
   }
 
   &__wrapper {
     display: flex;
-    box-shadow: $shadow-medium;
+    box-shadow: $shadow-light;
+    width: 30rem;
+    margin-top: 2rem;
 
     &:hover > .contact__link {
       background-position: left bottom;
@@ -32,7 +70,7 @@
   &__logo-wrapper {
     position: relative;
     height: 5rem;
-    width: 5rem;
+    width: 7rem;
     background-color: $color-primary;
 
     &:hover {
@@ -53,7 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12rem;
+    width: 100%;
     text-decoration: none;
     font-size: 1.5rem;
     text-align: center;
@@ -62,44 +100,5 @@
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.3s ease-out;
-  }
-
-  &__map {
-    position: relative;
-    height: 50rem;
-    width: 100rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  &__square {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 10rem;
-    background-color: rgb(1, 1, 1, 0.9);
-    color: white;
-    font-size: 1rem;
-
-    margin-left: 5rem;
-    margin-bottom: 10rem;
-    width: 20rem;
-    position: relative;
-
-    &:before {
-      border-top: 7rem solid rgb(1, 1, 1, 0.9);
-      border-left: 10rem solid transparent;
-      border-right: 10rem solid transparent;
-      content: "";
-      height: 0;
-      left: 0;
-      position: absolute;
-      bottom: -7rem;
-      width: 0;
-      position: absolute;
-    }
   }
 }

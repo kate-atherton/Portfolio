@@ -10,6 +10,7 @@
   height: 8vh;
   top: 0;
   box-shadow: $shadow-medium;
+  z-index: 200;
 }
 
 .scroll-progress {
@@ -32,18 +33,6 @@
   height: 4rem;
 
   //need to add a padding variable later
-  &__logo {
-    color: $color-primary;
-    font-weight: 700;
-    font-size: 3rem;
-    padding: 0 1rem;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      transform: scale(1.2);
-      cursor: pointer;
-    }
-  }
 
   &__divider {
     display: block;
@@ -51,35 +40,6 @@
     height: inherit;
     background-color: $color-grey-dark-2;
     margin: 0 1rem;
-  }
-
-  &__link {
-    padding: 0 1rem;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    width: 5.5rem;
-    height: inherit;
-    position: relative;
-    perspective: 1000px;
-
-    &:hover {
-      transform: rotateY(180deg);
-    }
-  }
-
-  &__back,
-  &__front {
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    top: 0;
-    left: 0;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  &__back {
-    transform: rotateY(180deg);
   }
 }
 

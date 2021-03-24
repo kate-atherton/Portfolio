@@ -16,21 +16,21 @@
         <div class="scroll-progress"></div>
         <nav class="nav">
           <div class="personal">
-            <span class="personal__logo">KA</span>
+            <span class="logo">KA</span>
             <div class="personal__divider"></div>
-            <a href="https://github.com/kate-atherton" target= "_blank" class="personal__link">
-              <div class="personal__front">
+            <a href="https://github.com/kate-atherton" target= "_blank" class="fliplink">
+              <div class="fliplink__front">
                 <img src="img/github.svg" alt="github logo">
               </div>
-              <div class="personal__back">
+              <div class="fliplink__back">
                 <img src="img/new-tab.svg" alt="new tab icon">
               </div>
             </a>
-            <a href="" target= "_blank" class="personal__link">
-              <div class="personal__front">
+            <a href="" target= "_blank" class="fliplink">
+              <div class="fliplink__front">
                 <img src="img/linkedin.svg" alt="linkedin logo">
               </div>
-              <div class="personal__back">
+              <div class="fliplink__back">
                 <img src="img/new-tab.svg" alt="new tab icon">
               </div>
             </a>
@@ -44,7 +44,10 @@
               <a href="#about" id="about-link" class="navbar__link">About</a>
             </li>
             <li class="navbar__stroke">
-              <a href="#work" id="work-link" class="navbar__link">Work</a>
+              <a href="#about" id="about-link" class="navbar__link">Skills</a>
+            </li>
+            <li class="navbar__stroke">
+              <a href="#work" id="work-link" class="navbar__link">Projects</a>
             </li>
             <li class="navbar__stroke">
               <a href="#contact" id="contact-link"class="navbar__link">Contact</a>
@@ -56,108 +59,263 @@
     <main class="main">  
       <section id="home" class="home section">
         <div class="home__intro">
-          <h1 class="heading">Hi I'm Kate</h1>
-          <p class="home__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatem fugit tempore eligendi. Corrupti incidunt magni non exercitationem, optio, possimus</p>
-        <a href="#work" class="home__link">View my work</a>  
-        </div>           
+          <h1 class="heading">Hi, I'm Kate</h1>
+          <p class="home__text">I'm a self-taught front-end web developer based in London. I enjoy designing and building websites and solving problems through code</p>
+
+
+          <a class="home__scroll" href="#projects" >
+              <img class="home__arrow" src="img/arrow-down2.svg" alt="Arrow down icon">
+              <p class="home__link">
+                See what I can do
+              </p>  
+          </a>         
+        </div>
+                   
         <img src="img/photo3Black.jpg" alt="" class="home__img"> 
       </section>  
       <section id="about" class="about section">
-        <h1 class="heading ">About</h1>
-        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ab ad, odio corrupti laudantium eaque nisi unde, quam quibusdam quae cupiditate impedit numquam iure labore aperiam accusamus adipisci expedita!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ab ad, odio corrupti laudantium eaque nisi unde, quam quibusdam quae cupiditate impedit numquam iure labore aperiam accusamus adipisci expedita!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ab ad, odio corrupti laudantium eaque nisi unde, quam quibusdam quae cupiditate impedit numquam iure labore aperiam accusamus adipisci expedita!</p>
-        <div class="about_skills">
-          <div class="about__skill">
-            <span class="about__wrapper">
-              <img src="img/html5.svg" alt="HTML logo" class="about__icon">
-            </span>
-            <h3 class="about__title">HTML 5</h3>
-            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
-          </div>
-
-          <div class="about__skill">
-            <span class="about__wrapper">
-              <img src="img/css3.svg" alt="CSS logo" class="about__icon">
-            </span>
-            <h3 class="about__title">CSS 3</h3>
-            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
-          </div>
+        <h1 class="heading ">About me</h1>
+        <div class="about__text">
           
-          <div class="about__skill">
-            <span class="about__wrapper">
-              <img src="img/javascript.svg" alt="JavaScript logo" class="about__icon">
-            </span>   
-            <h3 class="about__title">JavaScript</h3>
-            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
-          </div>
-
-          <div class="about__skill">
-            <span class="about__wrapper">
-              <img src="img/sass.svg" alt="Sass logo" class="about__icon">
-            </span> 
-            <h3 class="about__title">Sass</h3>
-            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
-          </div>
-
-          <div class="about__skill">
-            <span class="about__wrapper">
-              <img src="img/python.svg" alt="Python logo" class="about__icon">
-            </span>
-            <h3 class="about__title">Python</h3>
-            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur</p>
-          </div>
-
-          <div class="about__skill">
-            <span class="about__wrapper">
-              <img src="img/git.svg" alt="Git logo" class="about__icon">
-            </span>
-            <h3 class="about__title">Git</h3>
-            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis aperiam molestiae quam incidunt eaque, iste excepturi sunt quidem consectetur tenetur </p>
-          </div> 
-
+          <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="highlight">Eveniet delectus</span>, similique, deserunt ab veritatis assumenda aut ullam enim voluptas vitae</p>
+          <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="highlight">Eveniet delectus</span>, similique, deserunt ab veritatis assumenda aut ullam enim voluptas vitae</p>
+          <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="highlight">Eveniet delectus</span>, similique, deserunt ab veritatis assumenda aut ullam enim voluptas vitae</p>
+          <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="highlight">Eveniet delectus</span>, similique, deserunt ab veritatis assumenda aut ullam enim voluptas vitae</p>
         </div>
+      </section> 
 
-      </section>  
-      <section id="work" class="work section">
-        <h1 class="heading">Work</h1>
-        <div class="work__projects">
-          <div class="work__project"></div>
-          <div class="work__project"></div>
-        </div>
-         
-      </section>    
-      <section id="contact" class="contact section">
-        <h1 class="heading">Contact</h1>
-        <div class="contact__info">
-          <ul class="contact__links">
-            <li class="contact__wrapper">
-              <div class="contact__logo-wrapper">
-                <img class="contact__logo" src="img/envelop.svg" alt="linkedin logo">
-              </div> 
-              <a class="contact__link" href="mailto: kateatherton222@gmail.com">Send email</a>
-            </li>
-            <li class="contact__wrapper">
-              <div class="contact__logo-wrapper">
-                <img class="contact__logo" src="img/linkedin.svg" alt="linkedin logo">
-              </div>
-              <a class="contact__link" href="mailto: kateatherton222@gmail.com">Kate Atherton</a>
-            </li>
-          </ul>
-  
-            <div class="contact__map" style="background-image: url(img/stratfordMap.jpg);">
-              <div class="contact__square">
-                Kate Atherton
-                Stratford, London
-                @kateatherton222@gmail.com
-              </div>
+      <section id="skills" class="skills section">
+        <h1 class="heading ">Skills</h1>
+        <div class="skills__body">
+          <div class="skills__graphic">
+            <div class="skills__skill">
+              <span class="skills__wrapper">
+                <img src="img/html5.svg" alt="HTML logo" class="skills__icon">
+              </span>
+              <h3 class="skills__title">HTML 5</h3>
             </div>
+  
+            <div class="skills__skill">
+              <span class="skills__wrapper">
+                <img src="img/css3.svg" alt="CSS logo" class="skills__icon">
+              </span>
+              <h3 class="skills__title">CSS 3</h3>
+            </div>
+            
+            <div class="skills__skill">
+              <span class="skills__wrapper">
+                <img src="img/javascript.svg" alt="JavaScript logo" class="skills__icon">
+              </span>   
+              <h3 class="skills__title">JavaScript</h3>
+            </div>
+  
+            <div class="skills__skill">
+              <span class="skills__wrapper">
+                <img src="img/sass.svg" alt="Sass logo" class="skills__icon">
+              </span> 
+              <h3 class="skills__title">Sass</h3>
+            </div>
+  
+            <div class="skills__skill">
+              <span class="skills__wrapper">
+                <img src="img/python.svg" alt="Python logo" class="skills__icon">
+              </span>
+              <h3 class="skills__title">Python</h3>
+            </div>
+  
+            <div class="skills__skill">
+              <span class="skills__wrapper">
+                <img src="img/git.svg" alt="Git logo" class="skills__icon">
+              </span>
+              <h3 class="skills__title">Git</h3>
+            </div> 
+          </div>
+  
+          <div class="skills__cards">
+            <div class="skills__card">
+              <img class="skills__image" src="img/icons8-google-code.svg"/>
+              <p class="skills__heading">
+                I love javascript and learning the language fundamentals
+              </p>
+              <p class="skills__description">
+                I have a year's experience coding with JavaScript, from building interactive websites to solving coding challenges.
+              </p>
+              <p class="skills__keyskills">
+                <span class="highlight">Key skills:</span> ES6, object oriented programming, using MVC model, using APIs
+              </p>
+            </div>
+            
+            <div class="skills__card">
+                <img src="img/edit.svg" alt="" class="skills__image">
+                <p class="skills__heading">
+                I enjoy creating responsive and user friendly layouts
+                </p>
+                <p class="skills__description">
+                  I have experience using a large range of CSS tools and enjoy designing and implemeting website layouts. 
+                </p>
+                <p class="skills__keyskills">
+                  <span class="highlight">Key skills:</span> CSS flexbox and grid, responsive design, Sass, BEM
+                </p>             
+            </div>
+              
+            <div class="skills__card">
+                  <img src="" alt="" class="skills__image">
+                  <p class="skills__heading">
+    
+                  </p>
+                  <p class="skills__description">
+                    
+                  </p>
+                  <p class="skills__keyskills">
+                    <span class="highlight">Key skills:</span> 
+                  </p> 
+            </div>
+
+            <div class="skills__card">
+                    <img src="img/books.svg" alt="" class="skills__image">
+                    <p class="skills__heading">
+                      Drive, passion and willingness to learn
+                    </p>
+                    <p class="skills__description">
+                      I have taken a number of courses to level up my programming skills. I have a strong aptitude for learning and welcome the opportunity to expand my skillset.   
+                    </p>
+                    <p class="skills__keyskills">
+                      <span class="highlight">Courses taken:</span>JavaScript, CSS, Python, Git, Bash
+                    </p>  
+              </div> 
+  
+          </div>
+        </div>
+        
+      </section>
+   
+      
+      <section id="projects" class="projects section">
+        <h1 class="heading">Projects</h1>
+          <div class="projects__cards">
+          <div id="project1" class="projects__card">
+            <div class="projects__images">
+                <div class="projects__img-wrapper">
+                  <img src="img/Guardian1.png" alt="Project image" class="projects__image">
+                </div>
+              <p class="projects__tab">JavaScript</p>
+            </div>
+            <div class="projects__details">
+              <p class="projects__title">The Guardian Recipe Finder</p>
+            <p class="projects__description">Website that uses the Guardian's API to search for recipe articles and allows you to bookmark your favourites.The Guardian website's does not have a search function within its food section, so I build this website to better find articles </p>
+            <div class="projects__expand">
+              <p class="projects__expand-text">More details</p>
+              <img src="img/enlarge2.svg" alt="Expand icon" class="projects__expand-icon">
+            </div>
+            </div> 
+          </div>
+
+          <div id="project2" class="projects__card">
+            <div class="projects__images">
+                <div class="projects__img-wrapper">
+                  <img src="img/photo2.jpg" alt="Project image" class="projects__image">
+                </div>
+              <p class="projects__tab">JavaScript</p>
+            </div>
+            <div class="projects__details">
+              <p class="projects__title">Noughts and Crosses Game</p>
+            <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero adipisci enim vitae dolorum deserunt quis, nemo culpa velit aspernatur aliquam tempora cum pariatur illum eius deleniti itaque magni sint!</p>
+            <div class="projects__expand">
+              <p class="projects__expand-text">More details</p>
+              <img src="img/enlarge2.svg" alt="Expand icon" class="projects__expand-icon">
+            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>      
+      <section id="contact" class="contact section">
+        <h1 class="heading">Contact me</h1>
+        <div class="contact__map"></div>
+        <div class="contact__info">
+            <p class="contact__message">Let's get in touch</p>
+            <ul class="contact__links">
+              <li class="contact__wrapper">
+                <div class="contact__logo-wrapper">
+                  <img class="contact__logo" src="img/envelop.svg" alt="linkedin logo">
+                </div> 
+                <a class="contact__link" href="mailto: kateatherton222@gmail.com">kateatherton222@gmail.com</a>
+              </li>
+              <li class="contact__wrapper">
+                <div class="contact__logo-wrapper">
+                  <img class="contact__logo" src="img/linkedin.svg" alt="linkedin logo">
+                </div>
+                <a class="contact__link" href="mailto: kateatherton222@gmail.com">Kate Atherton</a>
+              </li>
+            </ul>
         </div>
         </form>
-      </section>     
+      </section>
       
     </main>
     <footer class="footer">
-      <p>Placeholder</p>
+      <span class="logo">KA</span>
     </footer>
+  
+  <div id="overlay1" class="overlay">
+
+    <div id="modal1" class="overlay__modal">
+      <button id="close1" class="overlay__close">
+        <img  src="img/cross.svg" alt="Close button" class="overlay__close-btn">
+      </button>
+
+      <div class="overlay__slider">
+
+          <div id="slide1" class="overlay__slide">
+            <img class="overlay__img" src="img/Guardian1.png">
+          </div>
+
+          <div id="slide1" class="overlay__slide">
+            <img class="overlay__img" src="img/Guardian2.png">
+          </div>
+
+          <div id="slide1" class="overlay__slide">
+            <img class="overlay__img" src="img/Guardian3.png">
+          </div>
+  
+          <button class="overlay__slider__btn overlay__slider__btn--left">&larr;</button>
+          <button class="overlay__slider__btn overlay__slider__btn--right">&rarr;</button>
+           <div class="overlay__dots"></div>
+      </div>
+      
+
+      <div class="overlay__text">
+        <p class="overlay__title">The Guardian Recipe Finder</p>
+        <p class="overlay__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate explicabo, corrupti doloremque aliquam placeat rem labore aut, id, vero natus quia debitis. Doloremque error quaerat aliquam iusto possimus ducimus vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, facere laudantium ducimus provident in libero voluptatum tenetur! Quos reiciendis accusamus cum perferendis nihil. Totam illum, vitae est animi quisquam atque!</p>
+      </div>
+      
+      <div class="overlay__links">
+          <a href="" target= "_blank" class="fliplink overlay__link">
+            <div class="overlay__link-icon fliplink__front">
+              <img src="img/play2.svg" alt="github logo">
+            </div>
+            <div class="overlay__link-icon fliplink__back">
+              <img src="img/new-tab.svg" alt="new tab icon">
+            </div>
+            <p class="overlay__link-text">Demo</p>
+          </a>
+          
+
+
+          <a href="https://github.com/kate-atherton" target= "_blank" class="fliplink overlay__link">
+            <div class="overlay__link-icon fliplink__front">
+              <img src="img/github.svg" alt="github logo">
+            </div>
+            <div class="overlay__link-icon fliplink__back">
+              <img src="img/new-tab.svg" alt="new tab icon">
+            </div>
+            <p class="overlay__link-text">Code</p>
+          </a>
+          
+        
+
+      </div>
+    </div>
   </body>
 </html>
 

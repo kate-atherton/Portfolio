@@ -1,0 +1,59 @@
+I have a year's experience coding with <span>JavaScript</span>. This includes ES6, object-oriented programming, using APIs, MVC? 
+
+vanilla
+
+communication with APIs
+
+I enjoy creating responsive and user friendly layouts. I have strong experience with CSS, proficien with the latest tools, such as flexbox and grid.
+
+Git Sass and BEM.. terminal
+
+
+Bundling tools: webpack 
+
+
+
+I have a strong aptitude for learning and developing my technical skills.
+
+I am always keen to learn new technologies and welcome the opportunity to expand my skillset.
+
+A passion for frontend tech and keeping up to date with the latest developments
+
+//mention willing to pick up new frameworks etc?
+
+drive, passion and willingness to learn
+
+
+Split into four cards
+
+I love javascript. Learning the language fundamentals...
+
+Key skills:
+
+I enjoy creating responsive and user friendly websites
+
+Key skills:
+
+
+Other tools I use
+
+
+Strong aptitude for learning
+
+
+
+        
+        Courses I have taken:
+        -Udemy: Advanced CSS and Sass: Flexbox, Grid, Animations and more
+        -Udemy: The Complete Javascript Course 2021
+        -Udemy:Automate the Boring Stuff with Python Programming
+        -freeCodeCamp: Web Design, JavaScript Algorithms and Data Structures
+        -Udacity: Introduction to Python Programming, Intro to HTML and css
+        -Codecademy: Git course, javascript course, bash course
+
+
+ABOUT SECTION:
+
+I discovered a love for coding when I took my first Udemy course in late 2019. Since then, I have invested my time into gaining a deep understanding of front-end web develoment and building my skillset. I enjoy bringing my ideas to life in the browser and continuously learning new skills. 
+
+        I have been working in the market research industry for the last 3 years. This has given me invaluable expereince in building client relationships and developing excellent teamworking skills. 

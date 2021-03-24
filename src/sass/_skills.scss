@@ -1,0 +1,115 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30rem;
+  height: 80rem;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__graphic {
+    height: 10rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1fr, 6);
+  }
+
+  &__skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-child(1n) {
+      grid-column: 1 / span 1;
+    }
+
+    &:nth-child(2n) {
+      grid-column: 2 / span 1;
+    }
+
+    &:nth-child(3n) {
+      grid-column: 3 / span 1;
+    }
+
+    &:nth-child(4n) {
+      grid-column: 4 / span 1;
+    }
+
+    &:nth-child(5n) {
+      grid-column: 5 / span 1;
+    }
+
+    &:nth-child(6n) {
+      grid-column: 6 / span 1;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: transparent;
+    z-index: -100;
+    box-shadow: $shadow-medium;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    filter: grayscale(100%);
+  }
+
+  &__title {
+    color: $color-grey-dark-1;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+    align-items: stretch;
+    justify-content: stretch;
+    height: 40rem;
+  }
+
+  &__card {
+    box-shadow: $shadow-medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+
+  &__image {
+    fill: $color-primary;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+  }
+
+  &__keyskills {
+    font-size: 1.5rem;
+  }
+}
