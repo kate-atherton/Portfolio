@@ -9,8 +9,6 @@ const sections = document.querySelectorAll("section");
 const projects = document.querySelectorAll(".projects__card");
 const closeModalBtns = document.querySelectorAll(".overlay__close");
 
-console.log(closeModalBtns);
-
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
@@ -159,3 +157,30 @@ const slider = () => {
 };
 
 slider();
+
+const videoBtn = document.querySelector(".overlay__video-btn");
+const gifDisplay = document.querySelector(".overlay__gif");
+const slideDisplay = document.querySelector(".overlay__slider");
+const imagesBtn = document.querySelector(".overlay__images-btn");
+
+videoBtn.addEventListener("click", () => {
+  if (gifDisplay.classList.contains("overlay__gif--active")) {
+    return;
+  }
+  gifDisplay.classList.add("overlay__gif--active");
+  slideDisplay.classList.remove("overlay__slider--active");
+
+  videoBtn.classList.add("overlay__btn--active");
+  imagesBtn.classList.remove("overlay__btn--active");
+});
+
+imagesBtn.addEventListener("click", () => {
+  if (slideDisplay.classList.contains("overlay__slider--active")) {
+    return;
+  }
+  slideDisplay.classList.add("overlay__slider--active");
+  gifDisplay.classList.remove("overlay__gif--active");
+
+  imagesBtn.classList.add("overlay__btn--active");
+  videoBtn.classList.remove("overlay__btn--active");
+});

@@ -264,24 +264,41 @@
         <img  src="img/cross.svg" alt="Close button" class="overlay__close-btn">
       </button>
 
-      <div class="overlay__slider">
+      <div class="overlay__media">
+        <div class="overlay__gif overlay__gif--active">   
+          <img class="overlay__video" src="img/GuardianVideo.gif" ></img> 
+        </div>
+        <div class="overlay__slider">
 
-          <div id="slide1" class="overlay__slide">
+          <div class="overlay__slide">
             <img class="overlay__img" src="img/Guardian1.png">
           </div>
 
-          <div id="slide1" class="overlay__slide">
+          <div class="overlay__slide">
             <img class="overlay__img" src="img/Guardian2.png">
           </div>
 
-          <div id="slide1" class="overlay__slide">
+          <div class="overlay__slide">
             <img class="overlay__img" src="img/Guardian3.png">
           </div>
   
           <button class="overlay__slider__btn overlay__slider__btn--left">&larr;</button>
           <button class="overlay__slider__btn overlay__slider__btn--right">&rarr;</button>
            <div class="overlay__dots"></div>
+      
+          </div>
+        
+        <div class="overlay__buttons">
+          <button class="overlay__btn overlay__btn--active overlay__video-btn">
+            <img class="overlay__btn-icon" src="img/play2.svg" alt="Play icon">
+          </button>
+          <button class="overlay__btn overlay__images-btn">
+            <img class="overlay__btn-icon" src="img/images.svg" alt="Images icon">
+          </button>
+        </div>
+        
       </div>
+      
       
 
       <div class="overlay__text">
@@ -290,30 +307,12 @@
       </div>
       
       <div class="overlay__links">
-          <a href="" target= "_blank" class="fliplink overlay__link">
-            <div class="overlay__link-icon fliplink__front">
-              <img src="img/play2.svg" alt="github logo">
-            </div>
-            <div class="overlay__link-icon fliplink__back">
-              <img src="img/new-tab.svg" alt="new tab icon">
-            </div>
-            <p class="overlay__link-text">Demo</p>
+          <a href="" target= "_blank" class="overlay__link">
+            Visit website
           </a>
-          
-
-
-          <a href="https://github.com/kate-atherton" target= "_blank" class="fliplink overlay__link">
-            <div class="overlay__link-icon fliplink__front">
-              <img src="img/github.svg" alt="github logo">
-            </div>
-            <div class="overlay__link-icon fliplink__back">
-              <img src="img/new-tab.svg" alt="new tab icon">
-            </div>
-            <p class="overlay__link-text">Code</p>
+          <a href="https://github.com/kate-atherton" target= "_blank" class="overlay__link">
+            View code
           </a>
-          
-        
-
       </div>
     </div>
   </body>

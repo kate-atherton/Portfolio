@@ -22,42 +22,75 @@
     box-shadow: $shadow-light;
     width: 80%;
     height: 80%;
-    display: flex;
+    align-items: center;
     justify-content: space-between;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 80% 20%;
+    grid-template-columns: 3% 52% 42% 3%;
+    grid-template-rows: 85% 15%;
   }
 
   &__close {
     width: 7rem;
     height: 7rem;
     background-color: white;
-    grid-column: 2 / span 1;
+    grid-column: 4 / span 1;
     grid-row: 1 / span 1;
     align-self: start;
     justify-self: end;
+    outline: none;
+    border: none;
 
     &:hover {
       cursor: pointer;
     }
   }
 
-  &__close {
-    outline: none;
-    border: none;
+  &__media {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    width: 100%;
+  }
+
+  &__gif {
+    display: none;
+
+    &--active {
+      display: flex;
+      width: 100%;
+      height: 30rem;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__slider {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-    align-self: center;
-    justify-self: center;
-    width: 100%;
-    height: 30rem;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+    display: none;
+
+    &--active {
+      display: flex;
+      width: 100%;
+      height: 30rem;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
   }
 
   &__slide {
@@ -134,20 +167,46 @@
     opacity: 1;
   }
 
+  &__buttons {
+    display: flex;
+    margin-top: 3rem;
+  }
+
+  &__btn {
+    text-decoration: none;
+    border: none;
+    background: inherit;
+    margin-right: 3rem;
+    opacity: 0.5;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover .overlay__btn-icon {
+      fill: $color-primary;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
   &__text {
     grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
+    grid-column: 3 / span 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0 2rem;
     text-align: center;
+    padding-left: 3rem;
   }
 
   &__title {
     font-size: 3rem;
     font-weight: 700;
     color: $color-primary;
+    margin-bottom: 2rem;
   }
 
   &__description {
@@ -157,31 +216,59 @@
   &__links {
     align-self: center;
     justify-self: center;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 4;
     grid-row: 2 / span 1;
 
     display: flex;
-    align-items: center;
     width: 40rem;
-    justify-content: space-evenly;
     justify-content: center;
+    align-self: start;
   }
 
   &__link {
-    display: flex;
-    align-items: center;
+    color: $color-primary;
+    position: relative;
     text-decoration: none;
-    width: 10rem;
-  }
-
-  &__link-icon {
-    top: 15%;
-  }
-
-  &__link-text {
-    margin-left: 4rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
+    margin-right: 3rem;
+    padding: 0.5rem 1rem;
+
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20%;
+      height: 20%;
+      border: 1.5px solid;
+      transition: all 0.6s ease;
+      border-radius: 2px;
+    }
+
+    &:after {
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: $color-primary;
+      border-right-color: $color-primary;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: $color-primary;
+      border-left-color: $color-primary;
+    }
+
+    &:hover:after,
+    &:hover:before {
+      width: 104%;
+      height: 110%;
+    }
   }
 }
 
@@ -200,5 +287,22 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+svg {
+  position: relative;
+  top: 0;
+  margin-left: 1rem;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: $color-primary;
+  stroke-width: 2;
+  transform: translateX(-1rem);
+  transition: all 0.3s ease;
+
+  &:active {
+    transform: scale(0.96);
   }
 }
