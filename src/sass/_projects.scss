@@ -1,11 +1,6 @@
 .projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  height: 40rem;
-  margin-bottom: 20rem;
 
   &__cards {
     display: grid;

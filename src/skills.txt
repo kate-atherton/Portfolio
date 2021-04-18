@@ -54,6 +54,66 @@ Strong aptitude for learning
 
 ABOUT SECTION:
 
-I discovered a love for coding when I took my first Udemy course in late 2019. Since then, I have invested my time into gaining a deep understanding of front-end web develoment and building my skillset. I enjoy bringing my ideas to life in the browser and continuously learning new skills. 
+I discovered a passion for coding when I enrolled in my first Udemy course in 2019. Since then, I have invested my spare time into gaining a deep understanding of front-end web develoment and building my skillset. I enjoy bringing my ideas to life in the browser and continuously learning new skills. 
 
-        I have been working in the market research industry for the last 3 years. This has given me invaluable expereince in building client relationships and developing excellent teamworking skills. 
+I have been working in the market research industry for the last 3 years. This has given me invaluable expereince in building client relationships and developing excellent teamworking skills. 
+
+
+
+
+I love coding as it always challenges you and allows you to bring your ideas to life. I have invested my spare time into 
+
+
+
+I decided to invest my time into learning to code after as I love that it constantly challenges you and allows you to bring your ideas to lfie. In my spare time, I have studied front-end web development and build 
+
+
+
+
+I'm a self-taught javascript developer and I have invested my spare time in learning the ins and outs of front-end development. I enjoy bringing my ideas to life in the browser and always challenging myself. 
+
+Having worked in the market research industry for the last three years, I bring invaluable expereince in building client relationships and developing excellent teamworking skills.
+
+I want to design, build, and develop solutions to improve people's lives.
+
+
+
+
+I love javascript and learning the language fundamentals
+            
+     
+I have a year's experience coding with JavaScript, from building interactive websites to solving coding challenges.
+           
+            
+Key skills: ES6, object oriented programming, using MVC model, using APIs
+          
+
+
+Creating responsive and user friendly layouts 
+
+I have built responsive websites using a large range of CSS tools. I enjoy designing and implementing beautiful designs, keeping mind of the latest trends.
+
+Key skills: CSS flexbox and grid, responsive design, SCSS, BEM
+
+
+
+Drive, passion and willingness to learn
+
+I have taken a number of courses to level up my programming skills. I have a strong aptitude for learning and welcome the opportunity to expand my skillset. I follow the latest coding news and trends through blog posts, podcasts and meetups. 
+
+Courses taken: JavaScript, CSS, Python, Git, Bash
+
+
+Linked in/Portfolio about section:
+
+ABOUT: Self-taught front-end developer based in London, adept with JavaScript, CSS and ...
+
+I have built several of my own projects featuring 
+
+In my current role in market research, I... 
+
+I have taught myself... through...
+
+Mention extra stuff done outside of codign??
+
+I love working on projects that take advantage of the latest web technologies. Visit ... to find out more. 
