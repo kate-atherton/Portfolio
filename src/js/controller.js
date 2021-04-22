@@ -184,3 +184,22 @@ imagesBtn.addEventListener("click", () => {
   imagesBtn.classList.add("overlay__btn--active");
   videoBtn.classList.remove("overlay__btn--active");
 });
+
+// const photo = document.querySelector(".home__img");
+
+// photo.addEventListener((""))
+
+// function interval() {
+//   while (true) {
+//       setInterval(showImage, 1);
+//   }
+// }
+
+// function showImage() {
+
+//   var x = clientX;
+//   var y = clientY;
+//   var image = document.getElementById("hoverimage");
+//   image.style.left = x;
+//   image.style.top = y;
+// }

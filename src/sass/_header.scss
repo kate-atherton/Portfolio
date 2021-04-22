@@ -3,14 +3,14 @@
   height: 10vh;
   background-color: inherit;
   transition: all 300ms ease-in;
+  position: fixed;
+  z-index: 1;
 }
 
 .sticky {
-  position: fixed;
   height: 8vh;
   top: 0;
   box-shadow: $shadow-medium;
-  z-index: 200;
 }
 
 .scroll-progress {
