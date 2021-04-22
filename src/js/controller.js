@@ -8,6 +8,7 @@ const links = document.querySelectorAll(".navbar__link");
 const sections = document.querySelectorAll("section");
 const projects = document.querySelectorAll(".projects__card");
 const closeModalBtns = document.querySelectorAll(".overlay__close");
+const photo = document.querySelector(".home__img");
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > sticky) {
@@ -185,21 +186,10 @@ imagesBtn.addEventListener("click", () => {
   videoBtn.classList.remove("overlay__btn--active");
 });
 
-// const photo = document.querySelector(".home__img");
+photo.addEventListener("mouseover", () => {
+  photo.classList.add("home__img--active");
+});
 
-// photo.addEventListener((""))
-
-// function interval() {
-//   while (true) {
-//       setInterval(showImage, 1);
-//   }
-// }
-
-// function showImage() {
-
-//   var x = clientX;
-//   var y = clientY;
-//   var image = document.getElementById("hoverimage");
-//   image.style.left = x;
-//   image.style.top = y;
-// }
+photo.addEventListener("mouseout", () => {
+  photo.classList.remove("home__img--active");
+});
