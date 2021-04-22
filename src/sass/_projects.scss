@@ -115,4 +115,25 @@
       transition: all 0.3s ease;
     }
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 120rem;
+
+    &__cards {
+      grid-template-columns: 50rem;
+      grid-template-rows: 47rem 47rem;
+    }
+
+    &__card {
+      &:nth-child(1n) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+      }
+
+      &:nth-child(2n) {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+      }
+    }
+  }
 }
