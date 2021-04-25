@@ -9,6 +9,8 @@ const sections = document.querySelectorAll("section");
 const projects = document.querySelectorAll(".projects__card");
 const closeModalBtns = document.querySelectorAll(".overlay__close");
 const photo = document.querySelector(".home__img");
+const navIcon = document.querySelector(".navbar-small__icon");
+const navModal = document.querySelector(".navbar-small__menu");
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > sticky) {
@@ -44,6 +46,15 @@ const changeLinkState = () => {
 
 changeLinkState();
 window.addEventListener("scroll", changeLinkState);
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (navModal.classList.contains("navbar-small__menu--show")) {
+      navModal.classList.remove("navbar-small__menu--show");
+      navIcon.classList.remove("navbar-small__icon--active");
+    }
+  });
+});
 
 projects.forEach((project) =>
   project.addEventListener("click", () => {
@@ -192,4 +203,9 @@ photo.addEventListener("mouseover", () => {
 
 photo.addEventListener("mouseout", () => {
   photo.classList.remove("home__img--active");
+});
+
+navIcon.addEventListener("click", () => {
+  navModal.classList.toggle("navbar-small__menu--show");
+  navIcon.classList.toggle("navbar-small__icon--active");
 });

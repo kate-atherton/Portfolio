@@ -210,7 +210,7 @@
   }
 
   &__description {
-    font-size: 1.5rem;
+    font-size: $font-size-small;
   }
 
   &__links {
@@ -229,7 +229,7 @@
     color: $color-primary;
     position: relative;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: $font-size-medium;
     font-weight: 700;
     margin-right: 3rem;
     padding: 0.5rem 1rem;

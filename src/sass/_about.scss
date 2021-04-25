@@ -4,9 +4,9 @@
 
   &__text {
     font-size: 2rem;
-    width: 80%;
     display: flex;
     flex-direction: column;
+    max-width: 80rem;
   }
 
   &__paragraph {

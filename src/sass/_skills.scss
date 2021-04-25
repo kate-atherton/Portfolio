@@ -66,27 +66,21 @@
     width: 60%;
   }
 
-  &__title {
-    color: $color-grey-dark-1;
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-
   &__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40rem;
-    grid-gap: 2rem;
+    grid-template-rows: 45rem;
+    grid-gap: 1rem;
     align-items: stretch;
     justify-content: stretch;
   }
 
   &__card {
+    text-align: center;
     box-shadow: $shadow-medium;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     padding: 2rem;
   }
 
@@ -94,34 +88,53 @@
     fill: $color-primary;
     width: 5rem;
     height: 5rem;
+    flex-grow: 1;
   }
 
   &__heading {
     font-size: 2rem;
     font-weight: 700;
+    flex-grow: 1;
   }
 
   &__description {
-    font-size: 1.5rem;
+    font-size: $font-size-small;
+    flex-grow: 1;
   }
 
   &__keyskills {
-    font-size: 1.5rem;
+    font-size: $font-size-small;
+    flex-grow: 1;
   }
 
   @media only screen and (max-width: $bp-medium) {
-    height: 120rem;
-
     &__cards {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 45rem 45rem;
+    }
+
+    &__card {
+      &:nth-child(3n) {
+        grid-column: 1 / span 2;
+        width: 50%;
+        justify-self: center;
+      }
     }
   }
 
   @media only screen and (max-width: $bp-small) {
     &__cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: 100%;
       grid-template-rows: 45rem 45rem 45rem;
+      grid-gap: 2rem;
+      justify-content: center;
+    }
+
+    &__card {
+      &:nth-child(3n) {
+        grid-column: 1 / span 1;
+        width: 100%;
+      }
     }
   }
 }

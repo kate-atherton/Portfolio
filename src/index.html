@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/png"/>
     <title>KA Portfolio</title>
   </head>
 
@@ -16,22 +17,22 @@
         <div class="scroll-progress"></div>
         <nav class="nav">
           <div class="personal">
-            <span class="logo">KA</span>
+            <img src="img/logo.png" alt="Logo" class="logo">
             <div class="personal__divider"></div>
             <a href="https://github.com/kate-atherton" target= "_blank" class="fliplink">
               <div class="fliplink__front">
-                <img src="img/github.svg" alt="github logo">
+                <img class="fliplink__logo" src="img/github.svg" alt="github logo">
               </div>
               <div class="fliplink__back">
-                <img src="img/new-tab.svg" alt="new tab icon">
+                <img class="fliplink__logo" src="img/new-tab.svg" alt="new tab icon">
               </div>
             </a>
             <a href="" target= "_blank" class="fliplink">
               <div class="fliplink__front">
-                <img src="img/linkedin.svg" alt="linkedin logo">
+                <img class="fliplink__logo" src="img/linkedin.svg" alt="linkedin logo">
               </div>
               <div class="fliplink__back">
-                <img src="img/new-tab.svg" alt="new tab icon">
+                <img class="fliplink__logo" src="img/new-tab.svg" alt="new tab icon">
               </div>
             </a>
           </div>
@@ -52,8 +53,36 @@
             <li class="navbar__stroke">
               <a href="#contact" id="contact-link"class="navbar__link">Contact</a>
             </li>
-            
           </ul> 
+
+          <div class="navbar-small">
+
+            <button href="" class="navbar-small__icon"></button>
+
+            <ul class="navbar-small__menu">
+              <li class="navbar__link-wrapper">
+                <a href="#home" id="home-link" class="navbar__link">Home</a>
+              </li>
+              <li class="navbar__link-wrapper">
+                <a href="#about" id="about-link" class="navbar__link">About</a>
+              </li>
+              <li class="navbar__link-wrapper">
+                <a href="#skills" id="about-link" class="navbar__link">Skills</a>
+              </li>
+              <li class="navbar__link-wrapper">
+                <a href="#projects" id="work-link" class="navbar__link">Projects</a>
+              </li>
+              <li class="navbar__link-wrapper">
+                <a href="#contact" id="contact-link"class="navbar__link">Contact</a>
+              </li>
+            </ul> 
+          </div>
+          
+
+          
+
+
+
         </nav>       
     </header> 
     <main class="main">  
@@ -193,7 +222,7 @@
             </div>
             <div class="projects__details">
               <p class="projects__title">The Guardian Recipe Finder</p>
-            <p class="projects__description">Website that uses the Guardian's API to search for recipe articles and allows you to bookmark your favourites.The Guardian website's does not have a search function within its food section, so I build this website to better find articles </p>
+            <p class="projects__description">The Guardian Food website does not have a search feature, so I built this recipe finder using their API. You can use it to browse and bookmark recipes. I use it all the time</p>
             <div class="projects__expand">
               <p class="projects__expand-text">More details</p>
               <img src="img/enlarge2.svg" alt="Expand icon" class="projects__expand-icon">
@@ -210,7 +239,7 @@
             </div>
             <div class="projects__details">
               <p class="projects__title">Noughts and Crosses Game</p>
-            <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero adipisci enim vitae dolorum deserunt quis, nemo culpa velit aspernatur aliquam tempora cum pariatur illum eius deleniti itaque magni sint!</p>
+            <p class="projects__description">Interactive game that challenges users to play against an unbeatable AI powered by the generic minimax algorithm </p>
             <div class="projects__expand">
               <p class="projects__expand-text">More details</p>
               <img src="img/enlarge2.svg" alt="Expand icon" class="projects__expand-icon">
@@ -245,7 +274,7 @@
       
     </main>
     <footer class="footer">
-      <span class="logo">KA</span>
+      <img src="img/logo.png" alt="Logo" class="logo">
     </footer>
   
   <div id="overlay1" class="overlay">
@@ -294,7 +323,11 @@
 
       <div class="overlay__text">
         <p class="overlay__title">The Guardian Recipe Finder</p>
-        <p class="overlay__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate explicabo, corrupti doloremque aliquam placeat rem labore aut, id, vero natus quia debitis. Doloremque error quaerat aliquam iusto possimus ducimus vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, facere laudantium ducimus provident in libero voluptatum tenetur! Quos reiciendis accusamus cum perferendis nihil. Totam illum, vitae est animi quisquam atque!</p>
+        <p class="overlay__description">Employs vanilla JavaScript to create a fully featured web application<br/>
+          Demonstrates my familiarity with object-oriented code, the MVC pattern and tools including WebPack, SCSS and ES6 modules<br/>
+          Supports searching, pagination, sorting and bookmarking powered by local storage<br/>
+          Responds to device size and type using CSS Grid and Flexbox
+          </p>
       </div>
       
       <div class="overlay__links">

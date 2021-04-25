@@ -15,7 +15,7 @@
       rgba(0, 0, 0, 0) 70%
     );
     width: 80%;
-    height: 90%;
+    height: 50rem;
     align-self: flex-end;
     background-size: contain;
   }
@@ -110,5 +110,11 @@
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.3s ease-out;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &__map {
+      margin-top: 10rem;
+    }
   }
 }

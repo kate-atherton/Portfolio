@@ -112,11 +112,10 @@ q {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
-  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   font-size: 62.5%; //10px/16px = 62.5% -> 1 rem =  10 px
   scroll-behavior: smooth;

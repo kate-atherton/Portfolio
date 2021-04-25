@@ -4,7 +4,11 @@
   background-color: inherit;
   transition: all 300ms ease-in;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
+
+  @media only screen and (max-width: $bp-small) {
+    box-shadow: $shadow-medium;
+  }
 }
 
 .sticky {
@@ -25,14 +29,16 @@
   align-items: center;
   height: 100%;
   padding: 0 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 2rem;
+  }
 }
 
 .personal {
   display: flex;
   align-items: center;
   height: 4rem;
-
-  //need to add a padding variable later
 
   &__divider {
     display: block;
@@ -50,7 +56,7 @@
   &__link {
     text-transform: uppercase;
     color: $color-grey-dark-1;
-    font-size: 1.5rem;
+    font-size: $font-size-small;
     font-weight: 700;
     margin: 0 1rem;
     text-decoration: none;
@@ -76,6 +82,94 @@
 
     &:hover:after {
       width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+
+    &__link {
+      font-size: 3rem;
+    }
+
+    &__link-wrapper {
+      margin: 3rem 0;
+    }
+  }
+}
+
+.navbar-small {
+  display: none;
+
+  @media only screen and (max-width: $bp-small) {
+    display: block;
+
+    &__icon {
+      position: relative;
+      z-index: 3;
+
+      &,
+      &:before,
+      &:after {
+        width: 5rem;
+        border: none;
+        background-color: black;
+        content: "";
+        display: block;
+        height: 0.5rem;
+        border-radius: 1rem;
+        margin: 0.75rem 0;
+        transition: all 0.2s;
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+      }
+
+      &:before {
+        bottom: 100%;
+      }
+
+      &:after {
+        top: 100%;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &--active {
+        background-color: transparent;
+      }
+
+      &--active:before {
+        transform: translateY(1rem) rotate(135deg);
+      }
+
+      &--active:after {
+        transform: translateY(-1.5rem) rotate(-135deg);
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    &--show {
+      z-index: 2;
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      height: 30rem;
+      width: 100vw;
+      height: 100vh;
+      box-shadow: $shadow-medium;
     }
   }
 }
