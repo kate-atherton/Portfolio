@@ -4,20 +4,19 @@
   position: relative;
 
   &__map {
-    background-image: url(../../static/img/stratfordMap.jpg);
-    -webkit-mask-image: radial-gradient(
-      ellipse at center,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.9) 30%,
-      rgba(0, 0, 0, 0.7) 40%,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.3) 60%,
-      rgba(0, 0, 0, 0) 70%
-    );
+    background-image: url(../../static/img/stratfordMap.png);
     width: 80%;
     height: 50rem;
     align-self: flex-end;
     background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  &__pin {
+    position: absolute;
+    width: 5rem;
+    height: auto;
   }
 
   &__info {
@@ -114,7 +113,26 @@
 
   @media only screen and (max-width: $bp-small) {
     &__map {
-      margin-top: 10rem;
+      width: 110%;
+      margin-top: 60%;
+      height: 30rem;
+    }
+
+    &__info {
+      top: 20%;
+    }
+
+    &__wrapper {
+      display: flex;
+      box-shadow: $shadow-light;
+      width: 30rem;
+      margin-top: 2rem;
+
+      &:hover > .contact__link {
+        background-position: none;
+        color: inherit;
+        cursor: pointer;
+      }
     }
   }
 }

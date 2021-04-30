@@ -1,7 +1,5 @@
 import "../sass/main.scss";
 
-//to do - put eveyrthing in functions so its more organised?
-
 const header = document.querySelector(".header");
 const sticky = header.offsetTop;
 const links = document.querySelectorAll(".navbar__link");
@@ -35,8 +33,9 @@ window.addEventListener("scroll", () => {
 
 const changeLinkState = () => {
   let index = sections.length;
+  let height = header.offsetHeight;
 
-  while (index-- && window.scrollY < sections[index].offsetTop) {
+  while (index-- && window.scrollY < sections[index].offsetTop + height) {
     links.forEach((link) => {
       link.classList.remove("navbar__link--active");
       links[index].classList.add("navbar__link--active");

@@ -20,21 +20,19 @@
   &__modal {
     background-color: white;
     box-shadow: $shadow-light;
-    width: 80%;
-    height: 80%;
-    align-items: center;
-    justify-content: space-between;
     display: grid;
-    grid-template-columns: 3% 52% 42% 3%;
-    grid-template-rows: 85% 15%;
+    grid-template-rows: 4fr 2fr 1fr;
+    grid-template-columns: 100%;
+    width: 80%;
+    height: 90%;
   }
 
   &__close {
     width: 7rem;
     height: 7rem;
     background-color: white;
-    grid-column: 4 / span 1;
     grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
     align-self: start;
     justify-self: end;
     outline: none;
@@ -46,14 +44,13 @@
   }
 
   &__media {
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 1;
     grid-row: 1 / span 1;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    justify-self: end;
-    width: 100%;
+    align-self: start;
   }
 
   &__gif {
@@ -61,11 +58,12 @@
 
     &--active {
       display: flex;
-      width: 100%;
-      height: 30rem;
+      width: 65rem;
+      height: auto;
       margin: 0 auto;
+      margin-top: 2rem;
       position: relative;
-      overflow: hidden;
+      // overflow: hidden;
     }
   }
 
@@ -73,7 +71,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 30rem;
+    height: auto;
 
     display: flex;
     align-items: center;
@@ -118,13 +116,13 @@
     z-index: 10;
 
     border: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: $color-primary;
     font-family: inherit;
-    color: #333;
+    color: #ffffff;
     border-radius: 50%;
-    height: 5.5rem;
-    width: 5.5rem;
-    font-size: 3.25rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
     cursor: pointer;
   }
 
@@ -134,8 +132,8 @@
   }
 
   &__slider__btn--right {
-    right: 6%;
-    transform: translate(50%, -50%);
+    right: 0%;
+    transform: translateY(-50%);
   }
 
   &__dots {
@@ -170,14 +168,15 @@
   &__buttons {
     display: flex;
     margin-top: 3rem;
+    justify-content: center;
   }
 
   &__btn {
     text-decoration: none;
     border: none;
     background: inherit;
-    margin-right: 3rem;
-    opacity: 0.5;
+    margin: 0 1.5rem;
+    opacity: 0.2;
 
     &:hover {
       cursor: pointer;
@@ -193,13 +192,13 @@
   }
 
   &__text {
-    grid-row: 1 / span 1;
-    grid-column: 3 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    padding-left: 3rem;
   }
 
   &__title {
@@ -214,15 +213,10 @@
   }
 
   &__links {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
     align-self: center;
     justify-self: center;
-    grid-column: 1 / span 4;
-    grid-row: 2 / span 1;
-
-    display: flex;
-    width: 40rem;
-    justify-content: center;
-    align-self: start;
   }
 
   &__link {
@@ -268,6 +262,30 @@
     &:hover:before {
       width: 104%;
       height: 110%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__modal {
+      width: 90%;
+      height: 90%;
+      grid-template-rows: 0.5fr 4fr 2fr 1fr;
+    }
+
+    &__close {
+      grid-row: 1 / span 1;
+    }
+
+    &__media {
+      grid-row: 2 / span 1;
+    }
+
+    &__text {
+      grid-row: 3 / span 1;
+    }
+
+    &__links {
+      grid-row: 4 / span 1;
     }
   }
 }
