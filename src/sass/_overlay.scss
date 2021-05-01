@@ -25,6 +25,7 @@
     grid-template-columns: 100%;
     width: 80%;
     height: 90%;
+    align-items: center;
   }
 
   &__close {
@@ -48,34 +49,25 @@
     grid-row: 1 / span 1;
 
     display: flex;
+    margin-top: 2rem;
     flex-direction: column;
-    justify-content: center;
-    align-self: start;
   }
 
   &__gif {
     display: none;
 
     &--active {
-      display: flex;
       width: 65rem;
-      height: auto;
+      height: 32.5rem;
+      display: flex;
       margin: 0 auto;
-      margin-top: 2rem;
-      position: relative;
-      // overflow: hidden;
     }
   }
 
   &__video {
-    position: absolute;
-    top: 0;
     width: 100%;
     height: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
   }
 
   &__slider {
@@ -83,62 +75,68 @@
 
     &--active {
       display: flex;
-      width: 100%;
-      height: 30rem;
-      margin: 0 auto;
+      width: 65rem;
+      height: 32.5rem;
       position: relative;
-      overflow: hidden;
+      justify-content: center;
+      align-self: center;
     }
+  }
+
+  &__slide-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
 
   &__slide {
     position: absolute;
-    top: 0;
-    width: 50rem;
-    height: 30rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: transform 1s;
+    height: 100%;
+    transition: transform 1s ease;
   }
 
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    &-mobile {
+      object-fit: contain;
+    }
   }
 
   &__slider__btn {
     position: absolute;
     top: 50%;
-    z-index: 10;
-
     border: none;
     background: $color-primary;
-    font-family: inherit;
-    color: #ffffff;
     border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+      height: 3rem;
+    }
   }
 
   &__slider__btn--left {
-    left: 6%;
+    left: 0%;
     transform: translate(-50%, -50%);
   }
 
   &__slider__btn--right {
-    right: 0%;
-    transform: translateY(-50%);
+    right: -7%;
+    transform: translate(-50%, -50%);
   }
 
   &__dots {
     position: absolute;
-    bottom: 5%;
+    bottom: -5%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -197,8 +195,9 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     text-align: center;
+    justify-self: center;
+    width: 60rem;
   }
 
   &__title {
@@ -210,6 +209,7 @@
 
   &__description {
     font-size: $font-size-small;
+    text-align: left;
   }
 
   &__links {
