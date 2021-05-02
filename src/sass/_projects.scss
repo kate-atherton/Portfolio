@@ -4,17 +4,21 @@
 
   &__cards {
     display: grid;
-    grid-template-columns: 55rem 55rem;
-    grid-template-rows: 47rem;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(min-content, max-content);
     grid-gap: 4rem;
     margin: 0 auto;
   }
 
   &__card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: minmax(min-content, max-content) minmax(
+        min-content,
+        max-content
+      );
+    grid-template-columns: 100%;
     position: relative;
-    justify-content: flex-end;
     height: 100%;
     box-shadow: $shadow-medium;
 
@@ -33,26 +37,25 @@
   }
 
   &__images {
-    width: 50rem;
-    height: 26rem;
-
+    justify-self: center;
+    width: 90%;
     z-index: 1;
-    box-shadow: $shadow-medium;
     position: relative;
-    align-self: center;
-    position: absolute;
     top: -5%;
+    box-shadow: $shadow-medium;
+  }
+
+  &__wrapper {
+    position: relative;
   }
 
   &__img-wrapper {
-    height: 100%;
-    width: 100%;
     overflow: hidden;
   }
 
   &__image {
-    height: 100%;
     width: 100%;
+    height: auto;
     filter: grayscale(0.5);
     transition: all 0.3s ease;
   }
@@ -64,7 +67,7 @@
     background-color: $color-primary;
     font-size: 1.5rem;
     text-align: center;
-    top: 95%;
+    bottom: -2%;
     left: 5%;
     padding: 0.25rem 1rem;
   }
@@ -109,7 +112,10 @@
   @media only screen and (max-width: $bp-medium) {
     &__cards {
       grid-template-columns: 100%;
-      grid-template-rows: 47rem 47rem;
+      grid-template-rows: minmax(min-content, max-content) minmax(
+          min-content,
+          max-content
+        );
       justify-content: center;
       grid-gap: 8rem;
     }

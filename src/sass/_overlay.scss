@@ -288,6 +288,18 @@
       grid-row: 4 / span 1;
     }
   }
+
+  @media only screen and (max-width: $bp-small) {
+    &__slider {
+      width: 37rem;
+      height: 18.5rem;
+    }
+
+    &__gif {
+      width: 37rem;
+      height: 18.5rem;
+    }
+  }
 }
 
 @-webkit-keyframes fade {

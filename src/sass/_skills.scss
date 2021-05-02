@@ -71,16 +71,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 45rem;
     grid-gap: 1rem;
-    align-items: stretch;
-    justify-content: stretch;
   }
 
   &__card {
-    text-align: center;
     box-shadow: $shadow-medium;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr 2fr;
     align-items: center;
+    justify-items: center;
     padding: 2rem;
   }
 
@@ -92,7 +90,8 @@
   }
 
   &__heading {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
     font-weight: 700;
     flex-grow: 1;
   }
@@ -125,7 +124,7 @@
   @media only screen and (max-width: $bp-small) {
     &__cards {
       grid-template-columns: 100%;
-      grid-template-rows: 45rem 45rem 45rem;
+      grid-template-rows: 60rem 60rem 60rem;
       grid-gap: 2rem;
       justify-content: center;
     }
@@ -135,6 +134,14 @@
         grid-column: 1 / span 1;
         width: 100%;
       }
+    }
+
+    &__description {
+      font-size: 2rem;
+    }
+
+    &__keyskills {
+      font-size: 2rem;
     }
   }
 }
