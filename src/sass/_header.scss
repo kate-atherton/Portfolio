@@ -80,8 +80,10 @@
       transition: all 0.2s ease-in-out;
     }
 
-    &:hover:after {
-      width: 100%;
+    @media (hover: hover) {
+      &:hover:after {
+        width: 100%;
+      }
     }
   }
 

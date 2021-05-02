@@ -3,10 +3,10 @@
   flex-direction: column;
 
   &__text {
-    font-size: 2rem;
+    font-size: $font-size-medium;
     display: flex;
     flex-direction: column;
-    max-width: 80rem;
+    max-width: 100rem;
   }
 
   &__paragraph {
