@@ -106,7 +106,7 @@
     flex-grow: 1;
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     &__cards {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 45rem 45rem;
@@ -124,7 +124,7 @@
   @media only screen and (max-width: $bp-small) {
     &__cards {
       grid-template-columns: 100%;
-      grid-template-rows: 60rem 60rem 60rem;
+      grid-template-rows: 50rem 50rem 50rem;
       grid-gap: 2rem;
       justify-content: center;
     }
@@ -142,6 +142,10 @@
 
     &__keyskills {
       font-size: 2rem;
+    }
+
+    &__graphic {
+      margin-top: 5rem;
     }
   }
 }

@@ -4,6 +4,13 @@
   position: relative;
   height: 100vh;
 
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__intro {
     display: flex;
     flex-direction: column;
@@ -45,7 +52,8 @@
 
   &__img-wrapper {
     overflow: hidden;
-    width: 40rem;
+    width: 34rem;
+    height: 34rem;
     border-radius: 50%;
     box-shadow: $shadow-medium;
   }
@@ -53,6 +61,7 @@
   &__img {
     width: 100%;
     border-radius: 50%;
+    object-fit: cover;
     filter: grayscale(0.7);
     transition: all 0.3s ease;
 
@@ -62,26 +71,30 @@
     }
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-large) {
     flex-direction: column;
     justify-content: center;
     height: fit-content;
 
+    &__wrapper {
+      flex-direction: column;
+    }
+
     &__intro {
       margin-right: 0;
-      width: 40rem;
+      width: 100%;
       padding-top: 15rem;
     }
 
     &__img-wrapper {
-      width: 25rem;
       margin-left: 10rem;
     }
   }
 
-  @media only screen and (max-width: $bp-small) {
-    &__intro {
-      width: 100%;
+  @media only screen and (max-width: $bp-medium) {
+    &__img-wrapper {
+      width: 30rem;
+      height: 30rem;
     }
   }
 }

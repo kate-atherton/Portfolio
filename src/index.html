@@ -87,23 +87,26 @@
     </header> 
     <main class="main">  
       <section id="home" class="home section">
-        <div class="home__intro">
-          <h1 class="heading">Hi, I'm Kate</h1>
-          <p class="home__text">I'm a self-taught front-end <span class="highlight">JavaScript Developer</span> based in London. I enjoy building websites and solving problems through code</p>
 
-
-          <a class="home__scroll" href="#projects" >
-              <img class="home__arrow" src="img/arrow-down2.svg" alt="Arrow down icon">
-              <p class="home__link">
-                See what I can do
-              </p>  
-          </a>         
+        <div class="home__wrapper">
+          <div class="home__intro">
+            <h1 class="heading">Hi, I'm Kate</h1>
+            <p class="home__text">I'm a self-taught front-end <span class="highlight">JavaScript Developer</span> based in London. I enjoy building websites and solving problems through code</p>
+  
+  
+            <a class="home__scroll" href="#projects" >
+                <img class="home__arrow" src="img/arrow-down2.svg" alt="Arrow down icon">
+                <p class="home__link">
+                  See what I can do
+                </p>  
+            </a>         
+          </div>
+                 
+          <div class="home__img-wrapper">
+            <img src="img/photo3.jpg" alt="" class="home__img">
+          </div>
         </div>
-               
-        <div class="home__img-wrapper">
-          <img src="img/photo3.jpg" alt="" class="home__img">
-        </div>
-         
+      
       </section>  
       <section id="about" class="about section">
         <h1 class="heading ">About me</h1>
@@ -331,11 +334,19 @@
 
       <div class="overlay__text">
         <p class="overlay__title">The Guardian Recipe Finder</p>
-        <p class="overlay__description">Employs vanilla JavaScript to create a fully featured web application<br/>
-          Demonstrates my familiarity with object-oriented code, the MVC pattern and tools including WebPack, SCSS and ES6 modules<br/>
-          Supports searching, pagination, sorting and bookmarking powered by local storage<br/>
-          Responds to device size and type using CSS Grid and Flexbox
-          </p>
+        <ul class="overlay__description">
+          <li>
+            Employs vanilla JavaScript to create a fully featured web application
+          </li>
+          <li>Demonstrates my familiarity with object-oriented code, the MVC pattern and tools including WebPack, SCSS and ES6 modules
+          </li>
+          <li>
+            Supports searching, pagination, sorting and bookmarking powered by local storage          
+          </li>
+          <li>
+            Responds to device size and type using CSS Grid and Flexbox
+          </li>
+        </ul>
       </div>
       
       <div class="overlay__links">
@@ -408,9 +419,14 @@
   
         <div class="overlay__text">
           <p class="overlay__title">Noughts And Crosses</p>
-          <p class="overlay__description">Features a range of additional options and user journeys including team selection and restarts<br/>
-            Delivers full cross-browser/device compatibility
-            </p>
+          <ul class="overlay__description">
+            <li>
+              Features a range of additional options and user journeys including team selection and restarts
+            </li>
+            <li>
+              Delivers full cross-browser/device compatibility
+            </li>
+          </ul>
         </div>
         
         <div class="overlay__links">

@@ -73,10 +73,10 @@
   }
 
   &__details {
-    display: grid;
-    height: 20rem;
-    grid-template-rows: 1fr 1.5fr 0.5fr;
     padding: 0 2rem 2rem 2rem;
+    display: grid;
+    grid-template-rows: 2fr 3fr 1fr;
+    height: 25rem;
   }
 
   &__title {
@@ -109,7 +109,7 @@
     }
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     &__cards {
       grid-template-columns: 100%;
       grid-template-rows: minmax(min-content, max-content) minmax(

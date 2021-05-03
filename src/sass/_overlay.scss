@@ -22,7 +22,7 @@
     box-shadow: $shadow-light;
     display: grid;
     grid-template-rows:
-      minmax(min-content, max-content) minmax(min-content, max-content)
+      minmax(min-content, max-content)
       minmax(min-content, max-content) minmax(min-content, max-content);
     grid-template-columns: 100%;
     width: 80%;
@@ -50,9 +50,8 @@
   &__media {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-
+    padding-top: 2rem;
     display: flex;
-    margin-top: 2rem;
     flex-direction: column;
   }
 
@@ -133,7 +132,7 @@
   }
 
   &__slider__btn--right {
-    right: -7%;
+    left: 100%;
     transform: translate(-50%, -50%);
   }
 
@@ -214,6 +213,7 @@
   &__description {
     font-size: $font-size-small;
     text-align: left;
+    list-style-type: disc;
   }
 
   &__links {
@@ -230,8 +230,11 @@
     text-decoration: none;
     font-size: $font-size-medium;
     font-weight: 700;
-    margin-right: 3rem;
     padding: 0.5rem 1rem;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
 
     &:after,
     &:before {
@@ -270,9 +273,53 @@
     }
   }
 
+  @media only screen and (max-width: $bp-large) {
+    &__slider {
+      width: 60rem;
+      height: 30rem;
+    }
+
+    &__gif {
+      width: 60rem;
+      height: 30rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__modal {
+      grid-template-rows:
+        minmax(min-content, max-content) minmax(min-content, max-content)
+        minmax(min-content, max-content) minmax(min-content, max-content);
+    }
+
+    &__media {
+      grid-row: 2 / span 1;
+      padding: 0;
+    }
+
+    &__text {
+      grid-row: 3 / span 1;
+    }
+
+    &__links {
+      grid-row: 4 / span 1;
+    }
+
+    &__slider {
+      width: 50rem;
+      height: 25rem;
+    }
+
+    &__gif {
+      width: 50rem;
+      height: 25rem;
+    }
+  }
+
   @media only screen and (max-width: $bp-small) {
     &__modal {
-      width: 90%;
+      width: 100%;
+      max-height: none;
     }
 
     &__slider {
@@ -283,6 +330,10 @@
     &__gif {
       width: 37rem;
       height: 18.5rem;
+    }
+
+    &__dots {
+      bottom: -10%;
     }
   }
 }

@@ -11,7 +11,7 @@
 
   &__map {
     background-image: url(../../static/img/stratfordMap.png);
-    width: 80%;
+    width: 90%;
     height: 50rem;
     background-size: contain;
     background-repeat: no-repeat;
@@ -114,18 +114,13 @@
     }
 
     &__map {
+      width: 110%;
+      height: 35rem;
       margin-top: 25rem;
     }
 
     &__info {
       top: 0%;
-    }
-  }
-
-  @media only screen and (max-width: $bp-small) {
-    &__map {
-      width: 110%;
-      height: 30rem;
     }
 
     &__link-wrapper {
