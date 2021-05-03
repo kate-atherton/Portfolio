@@ -7,6 +7,7 @@ const projects = document.querySelectorAll(".projects__card");
 const closeModalBtns = document.querySelectorAll(".overlay__close");
 const navIcon = document.querySelector(".navbar-small__icon");
 const navModal = document.querySelector(".navbar-small__menu");
+const sections = document.querySelectorAll(".section");
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > sticky) {
@@ -214,6 +215,13 @@ links.forEach((link) => {
     }
   });
 });
+
+if (
+  navigator.userAgent.search("Safari") >= 0 &&
+  navigator.userAgent.search("Chrome") < 0
+) {
+  sections.forEach((section) => section.classList.add("safari"));
+}
 
 const init = () => {
   slider(1);
