@@ -266,10 +266,12 @@
       border-left-color: $color-primary;
     }
 
-    &:hover:after,
-    &:hover:before {
-      width: 104%;
-      height: 110%;
+    @media (hover: hover) {
+      &:hover:after,
+      &:hover:before {
+        width: 104%;
+        height: 110%;
+      }
     }
   }
 

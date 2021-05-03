@@ -46,14 +46,18 @@ section {
   position: relative;
   perspective: 1000px;
 
-  &:hover > &__back {
-    transform-origin: top;
-    transform: scale(1);
+  @media (hover: hover) {
+    &:hover > &__back {
+      transform-origin: top;
+      transform: scale(1);
+    }
   }
 
-  &:hover > &__front {
-    transform-origin: bottom;
-    transform: scale(0);
+  @media (hover: hover) {
+    &:hover > &__front {
+      transform-origin: bottom;
+      transform: scale(0);
+    }
   }
 
   &__back,

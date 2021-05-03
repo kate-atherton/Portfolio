@@ -66,10 +66,12 @@
     width: 30rem;
     margin-top: 2rem;
 
-    &:hover > .contact__link {
-      background-position: left bottom;
-      color: white;
-      cursor: pointer;
+    @media (hover: hover) {
+      &:hover > .contact__link {
+        background-position: left bottom;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
 
