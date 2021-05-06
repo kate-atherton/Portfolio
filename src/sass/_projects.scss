@@ -60,23 +60,27 @@
     transition: all 0.3s ease;
   }
 
-  &__tab {
+  &__tabs {
     position: absolute;
+    bottom: -2%;
+    left: 5%;
+    display: flex;
+  }
+
+  &__tab {
     color: white;
     font-weight: 700;
     background-color: $color-primary;
     font-size: 1.5rem;
     text-align: center;
-    bottom: -2%;
-    left: 5%;
     padding: 0.25rem 1rem;
+    margin-right: 2rem;
   }
 
   &__details {
     padding: 0 2rem 2rem 2rem;
     display: grid;
     grid-template-rows: 2fr 3fr 1fr;
-    height: 25rem;
   }
 
   &__title {
@@ -118,6 +122,16 @@
         );
       justify-content: center;
       grid-gap: 8rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__description {
+      font-size: 2rem;
     }
   }
 }
