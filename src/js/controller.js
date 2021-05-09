@@ -96,19 +96,20 @@ import "../sass/main.scss";
       });
     };
 
-    const activateDot = (slide) => {
+    const activateDot = (slideIndex) => {
       const dots = document.querySelectorAll(`.overlay__dots__dot${num}`);
 
       dots.forEach((dot) => dot.classList.remove("overlay__dots__dot--active"));
 
       document
-        .querySelector(`.overlay__dots__dot${num}[data-slide="${slide}"]`)
+        .querySelector(`.overlay__dots__dot${num}[data-slide="${slideIndex}"]`)
         .classList.add("overlay__dots__dot--active");
     };
 
-    const goToSlide = (slide) => {
+    const goToSlide = (slideIndex) => {
       slides.forEach(
-        (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+        (slide, i) =>
+          (slide.style.transform = `translateX(${100 * (i - slideIndex)}%)`)
       );
     };
 
@@ -144,12 +145,6 @@ import "../sass/main.scss";
     // Event handlers
     btnRight.addEventListener("click", nextSlide);
     btnLeft.addEventListener("click", prevSlide);
-
-    //fix this
-    // document.addEventListener("keydown", function (e) {
-    //   if (e.key === "ArrowLeft") prevSlide();
-    //   e.key === "ArrowRight" && nextSlide();
-    // });
 
     dotContainer.addEventListener("click", function (e) {
       if (e.target.classList.contains("overlay__dots__dot")) {
