@@ -6,6 +6,7 @@ import "../sass/main.scss";
   const links = document.querySelectorAll(".navbar__link");
   const projects = document.querySelectorAll(".projects__card");
   const closeModalBtns = document.querySelectorAll(".overlay__close");
+  const navSmall = document.querySelector(".navbar-small");
   const navIcon = document.querySelector(".navbar-small__icon");
   const navModal = document.querySelector(".navbar-small__menu");
   const sections = document.querySelectorAll(".section");

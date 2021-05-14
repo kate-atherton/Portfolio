@@ -39,7 +39,6 @@
   &__images {
     justify-self: center;
     width: 90%;
-    z-index: 1;
     position: relative;
     top: -5%;
     box-shadow: $shadow-medium;
@@ -51,6 +50,9 @@
 
   &__img-wrapper {
     overflow: hidden;
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
   }
 
   &__image {
