@@ -338,6 +338,12 @@
     &__dots {
       bottom: -10%;
     }
+
+    &__link {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
   }
 }
 
