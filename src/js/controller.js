@@ -31,7 +31,6 @@ import "../sass/main.scss";
     document.querySelector(".scroll-progress").style.width = scrolled + "%";
   });
 
-  //add throttling to prevent too many function calls?
   //highlights nav-link according to scroll position
   const changeLinkState = () => {
     const sections = document.querySelectorAll("section");
