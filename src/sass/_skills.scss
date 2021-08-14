@@ -19,8 +19,8 @@
 
   &__wrapper {
     position: relative;
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     background: transparent;
     z-index: -100;
@@ -144,6 +144,42 @@
 
     &__graphic {
       margin-top: 5rem;
+      height: 20rem;
+      grid-template-columns: repeat(1fr, 4);
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &__skill {
+      &:nth-child(1n) {
+        grid-row: 1 / span 1;
+      }
+
+      &:nth-child(2n) {
+        grid-row: 1 / span 1;
+      }
+
+      &:nth-child(3n) {
+        grid-row: 1 / span 1;
+      }
+
+      &:nth-child(4n) {
+        grid-row: 1 / span 1;
+      }
+
+      &:nth-child(5n) {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+      }
+
+      &:nth-child(6n) {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+      }
+
+      &:nth-child(7n) {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+      }
     }
   }
 }
